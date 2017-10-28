@@ -1,0 +1,29 @@
+{
+  "name": "medalbot-remove",
+  "version": "1.0.0",
+  "description": "Removes the Partnered Bots from the Certified bots list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moustacheminer/medalbot-remove.git"
+  },
+  "keywords": [
+    "discord",
+    "medalbot",
+    "discordbots.org"
+  ],
+  "author": "Moustacheminer Server Services",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moustacheminer/medalbot-remove/issues"
+  },
+  "homepage": "https://github.com/moustacheminer/medalbot-remove#readme",
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
