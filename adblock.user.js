@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         discordbots.org AdBlock
 // @namespace    https://moustacheminer.com/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Removes the Partnered Bots from the Certified bots list.
 // @author       Moustacheminer Server Services
 // @match        https://discordbots.org/
@@ -39,7 +39,7 @@ const replaceBot = (bot) => {
 			bot.getElementsByClassName('stats')[0].firstChild.lastChild.innerHTML = commaDelimit(res.points);
 			bot.getElementsByClassName('stats')[0].lastChild.innerHTML = `${commaDelimit(res.server_count)} Servers`;
 			bot.getElementsByClassName('info')[0].firstChild.href = `/bot/${res.id}`;
-			bot.getElementsByClassName('info')[0].firstChild.firstChild.innerHTML = res.username;
+			bot.getElementsByClassName('bot-name')[0].innerHTML = res.username;
 			bot.getElementsByClassName('bot-description')[0].innerHTML = res.shortdesc;
 			bot.getElementsByClassName('lib')[0].innerHTML = res.lib;
 			bot.getElementsByClassName('bot-btns')[0].firstChild.href = `/bot/${res.id}`;
