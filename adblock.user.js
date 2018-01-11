@@ -11,7 +11,7 @@
 /* eslint-env browser */
 /* globals request */
 
-const count = 109;
+const count = 123;
 const apiUrl = 'https://discordbots.org/api/bots/?search=certifiedBot,true&limit=1&offset=';
 
 const commaDelimit = (number) => {
