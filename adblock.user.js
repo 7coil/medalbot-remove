@@ -15,6 +15,7 @@ const count = 1000;
 const apiUrl = 'https://discordbots.org/api/bots/?limit=1&offset=';
 
 const commaDelimit = (number) => {
+	if (!number) return 'Unknown';
 	const x = `${number}`;
 	const regex = new RegExp(`\\B(?=(\\d{3})+${~x.indexOf('.') ? '\\.' : '$'})`, 'g'); // eslint-disable-line no-bitwise
 	return x.replace(regex, ',');
