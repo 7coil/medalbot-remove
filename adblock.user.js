@@ -11,8 +11,8 @@
 /* eslint-env browser */
 /* globals request */
 
-const count = 123;
-const apiUrl = 'https://discordbots.org/api/bots/?search=certifiedBot,true&limit=1&offset=';
+const count = 1000;
+const apiUrl = 'https://discordbots.org/api/bots/?limit=1&offset=';
 
 const commaDelimit = (number) => {
 	const x = `${number}`;
@@ -37,7 +37,7 @@ const replaceBot = (bot) => {
 			bot.getElementsByClassName('bot-img')[0].firstChild.setAttribute('onclick', `window.location.href = '/bot/${res.id}'`);
 			bot.getElementsByClassName('stats')[0].firstChild.setAttribute('onclick', `upvote('${res.id}', this)`);
 			bot.getElementsByClassName('stats')[0].firstChild.lastChild.innerHTML = commaDelimit(res.points);
-			bot.getElementsByClassName('stats')[0].lastChild.innerHTML = `${commaDelimit(res.server_count)} Servers`;
+			bot.getElementsByClassName('servers btn btn-orange btn-1x')[0].innerHTML = `${commaDelimit(res.server_count)} Servers`;
 			bot.getElementsByClassName('info')[0].firstChild.href = `/bot/${res.id}`;
 			bot.getElementsByClassName('bot-name')[0].innerHTML = res.username;
 			bot.getElementsByClassName('bot-description')[0].innerHTML = res.shortdesc;
