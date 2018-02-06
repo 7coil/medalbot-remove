@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         discordbots.org AdBlock
 // @namespace    https://moustacheminer.com/
-// @version      1.0.1
+// @version      1.0.2
 // @description  Removes the Partnered Bots from the Certified bots list.
 // @author       Moustacheminer Server Services
 // @match        https://discordbots.org/
